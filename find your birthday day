@@ -1,0 +1,11 @@
+import datetime
+
+my_birthdayday_is = int(input('What is your birthday number? '))
+my_birthday_month_is = int(input('What month (number) were you born on? '))
+my_birthday_year_is = int(input('What year was that? '))
+
+
+my_birthday_is = datetime.date(my_birthday_year_is, my_birthday_month_is, my_birthdayday_is)
+
+message = "You are born on a {:%A}"
+print(message.format(my_birthday_is))
